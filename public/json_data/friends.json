@@ -1,0 +1,185 @@
+{
+    "friends": [
+        {
+            "id": 1,
+            "name": "Rahim Khan",
+            "picture": "https://picsum.photos/id/64/300/300",
+            "email": "rahim.khan@email.com",
+            "days_since_contact": 18,
+            "status": "overdue",
+            "tags": [
+                "college",
+                "close friend",
+                "cricket"
+            ],
+            "bio": "College roommate and cricket buddy. We used to play every weekend.",
+            "goal": 14,
+            "next_due_date": "2025-04-28"
+        },
+        {
+            "id": 2,
+            "name": "Sadia Ahmed",
+            "picture": "https://picsum.photos/id/65/300/300",
+            "email": "sadia.ahmed@email.com",
+            "days_since_contact": 5,
+            "status": "active",
+            "tags": [
+                "school",
+                "best friend"
+            ],
+            "bio": "Known since high school. Always there for late-night talks and gossip.",
+            "goal": 7,
+            "next_due_date": "2025-04-19"
+        },
+        {
+            "id": 3,
+            "name": "Tanvir Hossain",
+            "picture": "https://picsum.photos/id/91/300/300",
+            "email": "tanvir.h@email.com",
+            "days_since_contact": 23,
+            "status": "overdue",
+            "tags": [
+                "work",
+                "gym buddy"
+            ],
+            "bio": "Colleague from the previous job. We motivate each other at the gym.",
+            "goal": 21,
+            "next_due_date": "2025-05-05"
+        },
+        {
+            "id": 4,
+            "name": "Nadia Islam",
+            "picture": "https://picsum.photos/id/1027/300/300",
+            "email": "nadia.islam@email.com",
+            "days_since_contact": 9,
+            "status": "active",
+            "tags": [
+                "university",
+                "travel"
+            ],
+            "bio": "Met during university tour. We’ve traveled to Cox’s Bazar and Sylhet together.",
+            "goal": 10,
+            "next_due_date": "2025-04-24"
+        },
+        {
+            "id": 5,
+            "name": "Fahim Rahman",
+            "picture": "https://picsum.photos/id/201/300/300",
+            "email": "fahim.rahman@email.com",
+            "days_since_contact": 31,
+            "status": "overdue",
+            "tags": [
+                "childhood",
+                "gaming"
+            ],
+            "bio": "Childhood friend from the neighborhood. Still play PUBG and FIFA online.",
+            "goal": 30,
+            "next_due_date": "2025-05-14"
+        },
+        {
+            "id": 6,
+            "name": "Priya Das",
+            "picture": "https://picsum.photos/id/1005/300/300",
+            "email": "priya.das@email.com",
+            "days_since_contact": 3,
+            "status": "active",
+            "tags": [
+                "work",
+                "close friend"
+            ],
+            "bio": "Current team member and close confidante. We share lunch and ideas daily.",
+            "goal": 7,
+            "next_due_date": "2025-04-17"
+        },
+        {
+            "id": 7,
+            "name": "Imran Malik",
+            "picture": "https://picsum.photos/id/238/300/300",
+            "email": "imran.malik@email.com",
+            "days_since_contact": 15,
+            "status": "overdue",
+            "tags": [
+                "college",
+                "music"
+            ],
+            "bio": "Band mate from university days. Still jam together whenever we can.",
+            "goal": 14,
+            "next_due_date": "2025-04-29"
+        },
+        {
+            "id": 8,
+            "name": "Ayesha Khan",
+            "picture": "https://picsum.photos/id/102/300/300",
+            "email": "ayesha.k@email.com",
+            "days_since_contact": 8,
+            "status": "active",
+            "tags": [
+                "school",
+                "family friend"
+            ],
+            "bio": "Family friend since childhood. Feels more like a sister now.",
+            "goal": 10,
+            "next_due_date": "2025-04-22"
+        },
+        {
+            "id": 9,
+            "name": "Shafin Ahmed",
+            "picture": "https://picsum.photos/id/201/300/300",
+            "email": "shafin.ahmed@email.com",
+            "days_since_contact": 12,
+            "status": "overdue",
+            "tags": [
+                "university",
+                "football"
+            ],
+            "bio": "University football team captain. We still watch matches together.",
+            "goal": 14,
+            "next_due_date": "2025-04-26"
+        },
+        {
+            "id": 10,
+            "name": "Meherun Nessa",
+            "picture": "https://picsum.photos/id/1009/300/300",
+            "email": "meherun.nessa@email.com",
+            "days_since_contact": 4,
+            "status": "active",
+            "tags": [
+                "work",
+                "foodie"
+            ],
+            "bio": "Office colleague who loves trying new restaurants. Weekend food hunts are our thing.",
+            "goal": 7,
+            "next_due_date": "2025-04-18"
+        },
+        {
+            "id": 11,
+            "name": "Arifuzzaman Khan",
+            "picture": "https://picsum.photos/id/238/300/300",
+            "email": "arif.khan@email.com",
+            "days_since_contact": 27,
+            "status": "overdue",
+            "tags": [
+                "childhood",
+                "neighbor"
+            ],
+            "bio": "Grew up in the same para. Used to play carrom and fly kites together.",
+            "goal": 21,
+            "next_due_date": "2025-05-11"
+        },
+        {
+            "id": 12,
+            "name": "Sabrina Sultana",
+            "picture": "https://picsum.photos/id/65/300/300",
+            "email": "sabrina.sultana@email.com",
+            "days_since_contact": 6,
+            "status": "active",
+            "tags": [
+                "college",
+                "study buddy"
+            ],
+            "bio": "We burned the midnight oil together during finals. Still share career advice.",
+            "goal": 10,
+            "next_due_date": "2025-04-20"
+        }
+    ]
+}

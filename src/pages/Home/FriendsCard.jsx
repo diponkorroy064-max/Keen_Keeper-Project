@@ -1,0 +1,26 @@
+import React from 'react';
+import { Link } from 'react-router';
+
+
+const FriendsCard = ({ frndObj }) => {
+    console.log(frndObj);
+    return (
+        <Link to={frndObj.id} className='bg-amber-100 px-2.5 py-6 text-center space-y-3 shadow rounded-2xl'>
+            <img className='w-20 m-auto rounded-full' src={frndObj.picture} alt="" />
+
+            <h2 className='text-2xl font-bold'>{frndObj.name}</h2>
+
+            <p className='text-gray-500 text-[13px]'>{frndObj.days_since_contact}d ago</p>
+
+            <p className='flex justify-center gap-2'>
+                {
+                    frndObj.tags.map((itm, ind) => <span className='badge badge-primary' key={ind}>{itm}</span>)
+                }
+            </p>
+
+            <p className='badge badge-success'>{frndObj.status}</p>
+        </Link>
+    );
+};
+
+export default FriendsCard;
