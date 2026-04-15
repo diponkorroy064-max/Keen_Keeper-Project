@@ -5,7 +5,10 @@ import { HashLoader } from 'react-spinners';
 import callImg from '../../assets/call.png'
 import textImg from '../../assets/text.png'
 import videoImg from '../../assets/video.png'
-
+import { RiDeleteBin5Line } from "react-icons/ri";
+import { BiNotepad } from "react-icons/bi";
+import { MdNotificationsPaused } from "react-icons/md";
+import { FaHistory } from "react-icons/fa";
 
 const FriendDetails = () => {
     const { id } = useParams();
@@ -21,11 +24,12 @@ const FriendDetails = () => {
         return <h1 className='flex justify-center items-center py-15'><HashLoader /></h1>
     }
 
+
     return (
-        <div className='container m-auto px-10 my-8 grid grid-cols-3 gap-5'>
+        <div className='container m-auto px-30 py-10 grid grid-cols-1 md:grid-cols-3 gap-5 bg-[#F8FAFC]'>
 
             <div className='col-span-1 text-center space-y-4'>
-                <div className='bg-amber-100 px-2.5 py-6 space-y-3 shadow rounded-2xl'>
+                <div className='bg-white px-2.5 py-6 space-y-3 shadow rounded-md'>
                     <img className='w-20 m-auto rounded-full' src={expectedFrnd?.picture} alt="" />
 
                     <h2 className='text-2xl font-bold'>{expectedFrnd?.name}</h2>
@@ -43,77 +47,83 @@ const FriendDetails = () => {
                     <p className='font-semibold'>Prefered: Email</p>
                 </div>
 
-                <div className='bg-gray-200 py-4'>
+                <div className='bg-white rounded-md shadow py-4 flex justify-center items-center gap-2'>
+                    <h2><MdNotificationsPaused /></h2>
                     <h2>Snooze 2 weeks</h2>
                 </div>
 
-                <div className='bg-gray-200 py-4'>
+                <div className='bg-white rounded-md shadow py-4 flex justify-center items-center gap-2'>
+                    <h2><BiNotepad /></h2>
                     <h2>Archive</h2>
                 </div>
 
-                <div className='bg-gray-200 py-4'>
+                <div className='bg-white rounded-md shadow py-4 flex justify-center items-center gap-2 text-red-500'>
+                    <h2><RiDeleteBin5Line /></h2>
                     <h2>Delete</h2>
                 </div>
             </div>
 
             <div className='space-y-5 col-span-2'>
-                <div className='flex justify-between gap-2 text-center bg-amber-300 p-2'>
-                    <div className='bg-white px-2 md:px-12 py-2'>
-                        <h2>62</h2>
+                <div className='flex justify-between gap-5 text-center'>
+                    <div className='bg-white p-2 shadow rounded-md w-full'>
+                        <h2 className='text-2xl font-bold'>62</h2>
                         <p>Days Since Contact</p>
                     </div>
 
-                    <div className='bg-white px-2 md:px-12 py-2'>
-                        <h2>62</h2>
+                    <div className='bg-white p-2 shadow rounded-md w-full'>
+                        <h2 className='text-2xl font-bold'>62</h2>
                         <p>Days Since Contact</p>
                     </div>
 
-                    <div className='bg-white px-2 md:px-12 py-2'>
-                        <h2>62</h2>
+                    <div className='bg-white p-2 shadow rounded-md w-full'>
+                        <h2 className='text-2xl font-bold'>62</h2>
                         <p>Days Since Contact</p>
                     </div>
                 </div>
 
-                <div className='bg-gray-200 px-10'>
+                <div className='bg-white px-5 shadow rounded-md p-3'>
                     <div className='flex justify-between items-center'>
-                        <h2>Relationship Goal</h2>
+                        <h2 className='text-xl font-semibold'>Relationship Goal</h2>
                         <h2 className='btn'>Edit</h2>
                     </div>
                     <h2>Connect every <span>30 days</span></h2>
                 </div>
 
-                <div className='bg-gray-200 px-10'>
-                    <h2>Quick Check-In</h2>
+                <div className='bg-white shadow rounded-md px-5 py-2'>
+                    <h2 className='text-xl font-semibold pb-2'>Quick Check-In</h2>
 
-                    <div className='flex gap-5'>
-                        <button className='bg-amber-200 px-10'>
-                            <img src={callImg} alt="" />
+                    <div className='flex justify-between items-center gap-5'>
+                        <button className=' bg-gray-200 rounded-md p-2 w-full'>
+                            <div className='flex justify-center items-center'><img className='w-7' src={callImg} alt="" /></div>
                             <p>Call</p>
                         </button>
 
-                        <button className='bg-amber-200 px-10'>
-                            <img src={textImg} alt="" />
+                        <button className=' bg-gray-200 rounded-md p-2 w-full'>
+                            <div className='flex justify-center items-center'><img className='w-7' src={textImg} alt="" /></div>
                             <p>Text</p>
                         </button>
 
-                        <button className='bg-amber-200 px-10'>
-                            <img src={videoImg} alt="" />
-                            <p>Video</p>
+                        <button className='bg-gray-200 rounded-md p-2 w-full'>
+                                <div className='flex justify-center items-center'><img className='w-7' src={videoImg} alt="" /></div>
+                                <p>Video</p>
                         </button>
                     </div>
                 </div>
 
-                <div className='bg-gray-200 p-2.5 space-y-3'>
+                <div className='bg-white shadow rounded-md px-5 py-2 space-y-3'>
                     <div className='flex justify-between items-center'>
-                        <h2>Recent Interactions</h2>
-                        <h2 className='bg-gray-50 px-3 py-2'>Full History</h2>
+                        <h2 className='text-xl font-semibold pb-2'>Recent Interactions</h2>
+                        <h2 className='bg-gray-200 rounded-md px-3 py-2 flex justify-center items-center gap-2'>
+                            <span><FaHistory /></span>
+                            <span>Full History</span>
+                        </h2>
                     </div>
 
                     <div className='flex justify-between items-center bg-white shadow py-2 px-2'>
-                        <div className='flex justify-start items-center'>
-                            <div><img src={textImg} alt="" /></div>
+                        <div className='flex justify-start items-center gap-4'>
+                            <div><img className='w-7' src={textImg} alt="" /></div>
                             <div>
-                                <h3>Text</h3>
+                                <h3 className='font-semibold'>Text</h3>
                                 <p>Asked for career advice</p>
                             </div>
                         </div>
@@ -121,10 +131,10 @@ const FriendDetails = () => {
                     </div>
 
                     <div className='flex justify-between items-center bg-white shadow py-2 px-2'>
-                        <div className='flex justify-start items-center'>
-                            <div><img src={callImg} alt="" /></div>
+                        <div className='flex justify-start items-center gap-4'>
+                            <div><img className='w-7' src={callImg} alt="" /></div>
                             <div>
-                                <h3>Meetup</h3>
+                                <h3 className='font-semibold'>Meetup</h3>
                                 <p>Industry conference meetup</p>
                             </div>
                         </div>
@@ -132,10 +142,10 @@ const FriendDetails = () => {
                     </div>
 
                     <div className='flex justify-between items-center bg-white shadow py-2 px-2'>
-                        <div className='flex justify-start items-center'>
-                            <div><img src={videoImg} alt="" /></div>
+                        <div className='flex justify-start items-center gap-4'>
+                            <div><img className='w-7' src={videoImg} alt="" /></div>
                             <div>
-                                <h3>Video</h3>
+                                <h3 className='font-semibold'>Video</h3>
                                 <p>Asked for career advice</p>
                             </div>
                         </div>
@@ -143,8 +153,8 @@ const FriendDetails = () => {
                     </div>
 
                     <div className='flex justify-between items-center bg-white shadow py-2 px-2'>
-                        <div className='flex justify-start items-center'>
-                            <div><img src={textImg} alt="" /></div>
+                        <div className='flex justify-start items-center gap-4'>
+                            <div><img className='w-7' src={textImg} alt="" /></div>
                             <div>
                                 <h3>Text</h3>
                                 <p>Asked for career advice</p>
