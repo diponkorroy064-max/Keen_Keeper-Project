@@ -14,11 +14,11 @@ const AllFriends = () => {
 
     return (
         <div className='px-10 my-10'>
-            <div>
+            <div className='mb-4'>
                 <h1 className='text-2xl font-extrabold'>Your Friends</h1>
             </div>
 
-            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3'>
                 {
                     friends?.map(frndObj => <FriendsCard key={frndObj.id} frndObj={frndObj}></FriendsCard>)
                 }
