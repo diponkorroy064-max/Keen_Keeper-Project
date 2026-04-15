@@ -1,9 +1,10 @@
 import React from 'react';
 import { NavLink } from 'react-router';
 
+
 const Navbar = () => {
     return (
-        <div className='max-w-300 m-auto flex justify-between px-10 py-3 bg-gray-200'>
+        <div className='container mx-auto flex justify-between items-center flex-wrap gap-2 px-10 py-3 bg-gray-200'>
             <div>
                 <h2 className='text-2xl font-semibold'><span className='font-extrabold'>Keen</span>keeper</h2>
             </div>

@@ -7,7 +7,7 @@ import AllFriends from './AllFriends';
 
 const Home = () => {
     return (
-        <div className='max-w-300 m-auto'>
+        <div className='container mx-auto'>
             <Hero></Hero>
             <Tabs></Tabs>
             <AllFriends></AllFriends>

@@ -6,11 +6,10 @@
             "picture": "https://picsum.photos/id/64/300/300",
             "email": "rahim.khan@email.com",
             "days_since_contact": 18,
-            "status": "overdue",
+            "status": "Overdue",
             "tags": [
-                "college",
-                "close friend",
-                "cricket"
+                "College",
+                "Close friend"
             ],
             "bio": "College roommate and cricket buddy. We used to play every weekend.",
             "goal": 14,
@@ -22,10 +21,10 @@
             "picture": "https://picsum.photos/id/65/300/300",
             "email": "sadia.ahmed@email.com",
             "days_since_contact": 5,
-            "status": "active",
+            "status": "Almostdue",
             "tags": [
-                "school",
-                "best friend"
+                "School",
+                "Best friend"
             ],
             "bio": "Known since high school. Always there for late-night talks and gossip.",
             "goal": 7,
@@ -37,10 +36,10 @@
             "picture": "https://picsum.photos/id/91/300/300",
             "email": "tanvir.h@email.com",
             "days_since_contact": 23,
-            "status": "overdue",
+            "status": "Overdue",
             "tags": [
-                "work",
-                "gym buddy"
+                "Work",
+                "Gym buddy"
             ],
             "bio": "Colleague from the previous job. We motivate each other at the gym.",
             "goal": 21,
@@ -52,10 +51,10 @@
             "picture": "https://picsum.photos/id/1027/300/300",
             "email": "nadia.islam@email.com",
             "days_since_contact": 9,
-            "status": "active",
+            "status": "On-track",
             "tags": [
-                "university",
-                "travel"
+                "University",
+                "Travel"
             ],
             "bio": "Met during university tour. We’ve traveled to Cox’s Bazar and Sylhet together.",
             "goal": 10,
@@ -67,10 +66,10 @@
             "picture": "https://picsum.photos/id/201/300/300",
             "email": "fahim.rahman@email.com",
             "days_since_contact": 31,
-            "status": "overdue",
+            "status": "Overdue",
             "tags": [
-                "childhood",
-                "gaming"
+                "Childhood",
+                "Gaming"
             ],
             "bio": "Childhood friend from the neighborhood. Still play PUBG and FIFA online.",
             "goal": 30,
@@ -82,10 +81,10 @@
             "picture": "https://picsum.photos/id/1005/300/300",
             "email": "priya.das@email.com",
             "days_since_contact": 3,
-            "status": "active",
+            "status": "Almostdue",
             "tags": [
-                "work",
-                "close friend"
+                "Work",
+                "Close friend"
             ],
             "bio": "Current team member and close confidante. We share lunch and ideas daily.",
             "goal": 7,
@@ -97,10 +96,10 @@
             "picture": "https://picsum.photos/id/238/300/300",
             "email": "imran.malik@email.com",
             "days_since_contact": 15,
-            "status": "overdue",
+            "status": "Overdue",
             "tags": [
-                "college",
-                "music"
+                "College",
+                "Music"
             ],
             "bio": "Band mate from university days. Still jam together whenever we can.",
             "goal": 14,
@@ -112,10 +111,10 @@
             "picture": "https://picsum.photos/id/102/300/300",
             "email": "ayesha.k@email.com",
             "days_since_contact": 8,
-            "status": "active",
+            "status": "Almostdue",
             "tags": [
-                "school",
-                "family friend"
+                "Fchool",
+                "Family friend"
             ],
             "bio": "Family friend since childhood. Feels more like a sister now.",
             "goal": 10,
@@ -127,10 +126,10 @@
             "picture": "https://picsum.photos/id/201/300/300",
             "email": "shafin.ahmed@email.com",
             "days_since_contact": 12,
-            "status": "overdue",
+            "status": "Overdue",
             "tags": [
-                "university",
-                "football"
+                "University",
+                "Football"
             ],
             "bio": "University football team captain. We still watch matches together.",
             "goal": 14,
@@ -142,10 +141,10 @@
             "picture": "https://picsum.photos/id/1009/300/300",
             "email": "meherun.nessa@email.com",
             "days_since_contact": 4,
-            "status": "active",
+            "status": "On-track",
             "tags": [
-                "work",
-                "foodie"
+                "Work",
+                "Foodie"
             ],
             "bio": "Office colleague who loves trying new restaurants. Weekend food hunts are our thing.",
             "goal": 7,
@@ -157,10 +156,10 @@
             "picture": "https://picsum.photos/id/238/300/300",
             "email": "arif.khan@email.com",
             "days_since_contact": 27,
-            "status": "overdue",
+            "status": "Overdue",
             "tags": [
-                "childhood",
-                "neighbor"
+                "Childhood",
+                "Neighbor"
             ],
             "bio": "Grew up in the same para. Used to play carrom and fly kites together.",
             "goal": 21,
@@ -172,10 +171,10 @@
             "picture": "https://picsum.photos/id/65/300/300",
             "email": "sabrina.sultana@email.com",
             "days_since_contact": 6,
-            "status": "active",
+            "status": "Almostdue",
             "tags": [
-                "college",
-                "study buddy"
+                "College",
+                "Study buddy"
             ],
             "bio": "We burned the midnight oil together during finals. Still share career advice.",
             "goal": 10,

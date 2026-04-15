@@ -14,11 +14,11 @@ const FriendsCard = ({ frndObj }) => {
 
             <p className='flex justify-center gap-2'>
                 {
-                    frndObj.tags.map((itm, ind) => <span className='badge badge-primary' key={ind}>{itm}</span>)
+                    frndObj.tags.map((itm, ind) => <span className='badge bg-green-300 rounded-2xl font-semibold' key={ind}>{itm}</span>)
                 }
             </p>
 
-            <p className='badge badge-success'>{frndObj.status}</p>
+            <p className={`badge text-white font-semibold rounded-2xl ${frndObj.status == "Overdue" ? 'bg-red-500' : frndObj.status == "Almostdue" ?'bg-yellow-400':'bg-green-500'}`}>{frndObj.status}</p>
         </Link>
     );
 };
