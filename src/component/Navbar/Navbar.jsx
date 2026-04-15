@@ -1,5 +1,8 @@
 import React from 'react';
 import { NavLink } from 'react-router';
+import { FaHome } from "react-icons/fa";
+import { IoTimeOutline } from "react-icons/io5";
+import { BsGraphUp } from "react-icons/bs";
 
 
 const Navbar = () => {
@@ -10,9 +13,11 @@ const Navbar = () => {
             </div>
 
             <div className='flex gap-5'>
-                <NavLink to={'/'} className={({isActive})=> isActive ? " btn btn-primary":"btn"}>Home</NavLink>
-                <NavLink to={'/timeline'} className={({isActive})=> isActive ? " btn btn-primary":"btn"}>Timeline</NavLink>
-                <NavLink to={'/ststs'} className={({isActive})=> isActive ? " btn btn-primary":"btn"}>Stats</NavLink>
+                <NavLink to={'/'} className={({ isActive }) => `w-30 btn ${isActive ? "bg-green-700 text-white" : ""}`}><FaHome /> Home</NavLink>
+
+                <NavLink to={'/timeline'} className={({ isActive }) => `w-30 btn ${isActive ? "bg-green-700 text-white" : ""}`}> <IoTimeOutline /> Timeline</NavLink>
+
+                <NavLink to={'/ststs'} className={({ isActive }) => `w-30 btn ${isActive ? "bg-green-700 text-white" : ""}`}><BsGraphUp /> Stats</NavLink>
             </div>
         </div>
     );

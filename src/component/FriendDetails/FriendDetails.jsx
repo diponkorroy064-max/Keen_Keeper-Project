@@ -10,6 +10,7 @@ import { BiNotepad } from "react-icons/bi";
 import { MdNotificationsPaused } from "react-icons/md";
 import { FaHistory } from "react-icons/fa";
 
+
 const FriendDetails = () => {
     const { id } = useParams();
     // console.log('friendsId', id);

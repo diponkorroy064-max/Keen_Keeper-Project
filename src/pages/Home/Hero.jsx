@@ -1,4 +1,6 @@
 import React from 'react';
+import { GoPlus } from "react-icons/go";
+
 
 const Hero = () => {
     return (
@@ -8,7 +10,7 @@ const Hero = () => {
                 relationships that matter most.</p>
             
             <div>
-                <button className='btn btn-secondary'>Add a Friend</button>
+                <button className='btn bg-green-800 text-white'><GoPlus /> Add a Friend</button>
             </div>
         </div>
     );
