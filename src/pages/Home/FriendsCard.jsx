@@ -3,9 +3,9 @@ import { Link } from 'react-router';
 
 
 const FriendsCard = ({ frndObj }) => {
-    console.log(frndObj);
+    // console.log(frndObj);
     return (
-        <Link to={frndObj.id} className='bg-amber-100 px-2.5 py-6 text-center space-y-3 shadow rounded-2xl'>
+        <Link to={`/friendDetails/${frndObj.id}`} className='bg-amber-100 px-2.5 py-6 text-center space-y-3 shadow rounded-2xl'>
             <img className='w-20 m-auto rounded-full' src={frndObj.picture} alt="" />
 
             <h2 className='text-2xl font-bold'>{frndObj.name}</h2>

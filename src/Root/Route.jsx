@@ -5,7 +5,6 @@ import Timeline from "../pages/Timeline/Timeline";
 import Stats from "../pages/Stats/Stats";
 import FriendDetails from "../component/FriendDetails/FriendDetails";
 
-
 export const router = createBrowserRouter([
     {
         path: "/",
@@ -24,7 +23,7 @@ export const router = createBrowserRouter([
                 Component: Stats
             },
             {
-                path: ':friendId',
+                path: "/friendDetails/:id",
                 Component:FriendDetails
             }
         ]

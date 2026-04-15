@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 const useFriends = () => {
 
     const [friends, setFriends] = useState();
-    // const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -15,14 +15,13 @@ const useFriends = () => {
 
             setTimeout(() => {
                 setFriends(data);
-                // setLoading(false);
+                setLoading(false);
             }, 2000)
         };
         fetchData();
     }, []);
 
-    // return { apps, loading };
-    return { friends };
+    return { friends, loading };
 };
 
 export default useFriends;
