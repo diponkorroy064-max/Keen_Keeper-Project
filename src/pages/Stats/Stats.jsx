@@ -10,6 +10,7 @@ const Stats = () => {
     let call = 0;
     let text = 0;
     let video = 0;
+    
     for (const obj of timeline) {
         if (obj.type=="Call") {
             call++;
