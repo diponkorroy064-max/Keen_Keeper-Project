@@ -25,31 +25,13 @@ const FriendDetails = () => {
 
     const { timeline, setTimeline } = useContext(FriendsContext);
 
-    // const handleCall = () => {
-    //     setCall([...call, expectedFrnd]);
-    //     toast.success(`Call with ${expectedFrnd.name}`);
-    // };
-
-    // const handleText = () => {
-    //     setText([...text, expectedFrnd]);
-    //     toast.success(`Text with ${expectedFrnd.name}`);
-    // };
-
-    // const handleVideo = () => {
-    //     setVideo([...video, expectedFrnd]);
-    //     toast.success(`Video with ${expectedFrnd.name}`);
-    // }
-
     const handleTimeline = (type) => {
         const info = { ...expectedFrnd, type };
 
         setTimeline([...timeline, info]);
         toast.success(`${type} with ${expectedFrnd.name}`);
     }
-    
-    console.log(timeline);
-    // console.log(text);
-    // console.log(video);
+    // console.log(timeline);
 
 
     if (loading) {

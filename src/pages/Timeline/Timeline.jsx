@@ -8,7 +8,7 @@ import videoImg from '../../assets/video.png'
 const Timeline = () => {
 
     const { timeline } = useContext(FriendsContext);
-    // console.log(call);
+    // console.log(timeline);
 
     return (
         <div className='bg-[#F8FAFC] py-10 px-30 space-y-6'>
