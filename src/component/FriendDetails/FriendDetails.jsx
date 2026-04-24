@@ -25,20 +25,31 @@ const FriendDetails = () => {
 
     const { timeline, setTimeline } = useContext(FriendsContext);
 
-    const handleCall = () => {
-        setTimeline([...timeline, expectedFrnd]);
-        toast.success(`Call with ${expectedFrnd.name}`);
-    };
+    // const handleCall = () => {
+    //     setCall([...call, expectedFrnd]);
+    //     toast.success(`Call with ${expectedFrnd.name}`);
+    // };
 
-    const handleText = () => {
-        toast.success(`Text with ${expectedFrnd.name}`);
-    };
+    // const handleText = () => {
+    //     setText([...text, expectedFrnd]);
+    //     toast.success(`Text with ${expectedFrnd.name}`);
+    // };
 
-    const handleVideo = () => {
-        toast.success(`Video with ${expectedFrnd.name}`);
+    // const handleVideo = () => {
+    //     setVideo([...video, expectedFrnd]);
+    //     toast.success(`Video with ${expectedFrnd.name}`);
+    // }
+
+    const handleTimeline = (type) => {
+        const info = { ...expectedFrnd, type };
+
+        setTimeline([...timeline, info]);
+        toast.success(`${type} with ${expectedFrnd.name}`);
     }
+    
     console.log(timeline);
-
+    // console.log(text);
+    // console.log(video);
 
 
     if (loading) {
@@ -115,17 +126,17 @@ const FriendDetails = () => {
 
                     <div className='grid grid-cols-1 md:grid-cols-3 gap-5'>
 
-                        <button onClick={handleCall} className='btn btn-soft bg-gray-200 rounded-md py-10 px-21 flex flex-col'>
+                        <button onClick={()=>handleTimeline('Call')} className='btn btn-soft bg-gray-200 rounded-md py-10 px-21 flex flex-col'>
                             <div className='flex justify-center items-center'><img className='w-7' src={callImg} alt="" /></div>
                             <p>Call</p>
                         </button>
 
-                        <button onClick={handleText} className='btn btn-soft bg-gray-200 rounded-md py-10 px-21 flex flex-col'>
+                        <button onClick={()=>handleTimeline('Text')} className='btn btn-soft bg-gray-200 rounded-md py-10 px-21 flex flex-col'>
                             <div className='flex justify-center items-center'><img className='w-7' src={textImg} alt="" /></div>
                             <p>Text</p>
                         </button>
 
-                        <button onClick={handleVideo} className='btn btn-soft bg-gray-200 rounded-md py-10 px-21 flex flex-col'>
+                        <button onClick={()=>handleTimeline('Video')} className='btn btn-soft bg-gray-200 rounded-md py-10 px-21 flex flex-col'>
                             <div className='flex justify-center items-center'><img className='w-7' src={videoImg} alt="" /></div>
                             <p>Video</p>
                         </button>
