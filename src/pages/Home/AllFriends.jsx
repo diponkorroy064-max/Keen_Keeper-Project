@@ -1,6 +1,6 @@
 import React from 'react';
 import FriendsCard from './FriendsCard';
-import useFriends from '../../useFriends/UseFriends';
+import useFriends from '../../Hooks/UseFriends';
 import { HashLoader } from 'react-spinners';
 
 

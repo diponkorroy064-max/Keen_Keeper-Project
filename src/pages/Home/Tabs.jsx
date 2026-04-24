@@ -1,5 +1,5 @@
 import React from 'react';
-import useFriends from '../../useFriends/UseFriends';
+import useFriends from '../../Hooks/UseFriends';
 
 const Tabs = () => {
     const { friends } = useFriends();
@@ -27,7 +27,7 @@ const Tabs = () => {
                 <h1 className='text-2xl font-bold'>6</h1>
                 <p>Interactions This Month</p>
             </div>
-            
+
         </div>
     );
 };

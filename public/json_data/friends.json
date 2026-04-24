@@ -3,7 +3,7 @@
         {
             "id": 1,
             "name": "Rahim Khan",
-            "picture": "https://picsum.photos/id/64/300/300",
+            "picture": "https://i.ibb.co.com/LdmHg7x6/diponkor.jpg",
             "email": "rahim.khan@email.com",
             "days_since_contact": 18,
             "status": "Overdue",
@@ -18,7 +18,7 @@
         {
             "id": 2,
             "name": "Sadia Ahmed",
-            "picture": "https://picsum.photos/id/65/300/300",
+            "picture": "https://i.ibb.co.com/PGQqH6xK/tipi.jpg",
             "email": "sadia.ahmed@email.com",
             "days_since_contact": 5,
             "status": "Almostdue",
@@ -33,7 +33,7 @@
         {
             "id": 3,
             "name": "Tanvir Hossain",
-            "picture": "https://picsum.photos/id/91/300/300",
+            "picture": "https://i.ibb.co.com/DD48Kmyh/topu.jpg",
             "email": "tanvir.h@email.com",
             "days_since_contact": 23,
             "status": "Overdue",
@@ -56,7 +56,7 @@
                 "University",
                 "Travel"
             ],
-            "bio": "Met during university tour. We’ve traveled to Cox’s Bazar and Sylhet together.",
+            "bio": "Met during university tour. We've traveled to Cox's Bazar and Sylhet together.",
             "goal": 10,
             "next_due_date": "2025-04-24"
         },
@@ -93,7 +93,7 @@
         {
             "id": 7,
             "name": "Imran Malik",
-            "picture": "https://picsum.photos/id/238/300/300",
+            "picture": "https://i.ibb.co.com/5CPsPb7/mono.jpg",
             "email": "imran.malik@email.com",
             "days_since_contact": 15,
             "status": "Overdue",
@@ -108,7 +108,7 @@
         {
             "id": 8,
             "name": "Ayesha Khan",
-            "picture": "https://picsum.photos/id/102/300/300",
+            "picture": "https://i.ibb.co.com/bgdRqf2f/jothy.jpg",
             "email": "ayesha.k@email.com",
             "days_since_contact": 8,
             "status": "Almostdue",
@@ -123,7 +123,7 @@
         {
             "id": 9,
             "name": "Shafin Ahmed",
-            "picture": "https://picsum.photos/id/201/300/300",
+            "picture": "https://i.ibb.co.com/rfXHDxtr/tipu.jpg",
             "email": "shafin.ahmed@email.com",
             "days_since_contact": 12,
             "status": "Overdue",
@@ -138,7 +138,7 @@
         {
             "id": 10,
             "name": "Meherun Nessa",
-            "picture": "https://picsum.photos/id/1009/300/300",
+            "picture": "https://i.ibb.co.com/cS5zMb7X/tompa.jpg",
             "email": "meherun.nessa@email.com",
             "days_since_contact": 4,
             "status": "On-track",
@@ -153,7 +153,7 @@
         {
             "id": 11,
             "name": "Arifuzzaman Khan",
-            "picture": "https://picsum.photos/id/238/300/300",
+            "picture": "https://i.ibb.co.com/mrdsYBDH/fokla.jpg",
             "email": "arif.khan@email.com",
             "days_since_contact": 27,
             "status": "Overdue",

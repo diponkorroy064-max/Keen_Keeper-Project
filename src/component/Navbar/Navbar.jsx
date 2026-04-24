@@ -13,11 +13,11 @@ const Navbar = () => {
             </div>
 
             <div className='flex justify-center items-center flex-wrap gap-2'>
-                <NavLink to={'/'} className={({ isActive }) => `w-28 btn ${isActive ? "bg-green-700 text-white" : "shadow"}`}><FaHome /> Home</NavLink>
+                <NavLink to={'/'} className={({ isActive }) => `w-28 btn ${isActive ? "bg-green-900 text-white" : "shadow"}`}><FaHome /> Home</NavLink>
 
-                <NavLink to={'/timeline'} className={({ isActive }) => `w-28 btn ${isActive ? "bg-green-700 text-white" : "shadow"}`}> <IoTimeOutline /> Timeline</NavLink>
+                <NavLink to={'/timeline'} className={({ isActive }) => `w-28 btn ${isActive ? "bg-green-900 text-white" : "shadow"}`}> <IoTimeOutline /> Timeline</NavLink>
 
-                <NavLink to={'/ststs'} className={({ isActive }) => `w-28 btn ${isActive ? "bg-green-700 text-white" : "shadow"}`}><BsGraphUp /> Stats</NavLink>
+                <NavLink to={'/ststs'} className={({ isActive }) => `w-28 btn ${isActive ? "bg-green-900 text-white" : "shadow"}`}><BsGraphUp /> Stats</NavLink>
             </div>
         </div>
     );
