@@ -32,7 +32,7 @@ const FriendDetails = () => {
     const handleTimeline = (type) => {
         const nowDate = new Date().toLocaleDateString();
         const date = moment(nowDate).format("MMM Do, YYYY");
-        console.log(date);
+        // console.log(date);
 
         const info = { ...expectedFrnd, type, date };
 

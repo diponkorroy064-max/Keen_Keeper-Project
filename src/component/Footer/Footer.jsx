@@ -7,7 +7,7 @@ import { BsTwitterX } from "react-icons/bs";
 
 const Footer = () => {
     return (
-        <div className='container mx-auto bg-green-900 text-[#FFFFFF] text-center px-10 pt-12 space-y-5'>
+        <div className='container mx-auto bg-[#244d3f] text-[#FFFFFF] text-center px-10 pt-12 space-y-5'>
 
             <h1 className='text-2xl md:text-5xl font-extrabold'>KeenKeeper</h1>
 
