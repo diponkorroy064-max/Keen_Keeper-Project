@@ -21,7 +21,7 @@ export const router = createBrowserRouter([
                 Component: Timeline
             },
             {
-                path: "/ststs",
+                path: "/stats",
                 Component: Stats
             },
             {

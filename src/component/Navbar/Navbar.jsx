@@ -1,8 +1,9 @@
 import React from 'react';
-import { NavLink } from 'react-router';
+import { Link, NavLink } from 'react-router';
 import { FaHome } from "react-icons/fa";
 import { IoTimeOutline } from "react-icons/io5";
 import { BsGraphUp } from "react-icons/bs";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 
 const Navbar = () => {
@@ -12,12 +13,23 @@ const Navbar = () => {
                 <h2 className='text-2xl font-semibold text-green-800'><span className='font-extrabold text-black'>Keen</span>keeper</h2>
             </div>
 
-            <div className='flex justify-center items-center flex-wrap gap-2'>
+            <div className='hidden md:flex justify-center items-center flex-wrap gap-2'>
                 <NavLink to={'/'} className={({ isActive }) => `btn ${isActive ? "bg-green-900 text-white" : "shadow"}`}><FaHome /> Home</NavLink>
 
                 <NavLink to={'/timeline'} className={({ isActive }) => `btn ${isActive ? "bg-green-900 text-white" : "shadow"}`}> <IoTimeOutline /> Timeline</NavLink>
 
-                <NavLink to={'/ststs'} className={({ isActive }) => `btn ${isActive ? "bg-green-900 text-white" : "shadow"}`}><BsGraphUp /> Stats</NavLink>
+                <NavLink to={'/stats'} className={({ isActive }) => `btn ${isActive ? "bg-green-900 text-white" : "shadow"}`}><BsGraphUp /> Stats</NavLink>
+            </div>
+
+            <div className="dropdown dropdown-left md:hidden">
+                <div tabIndex={0} className=''>
+                    <GiHamburgerMenu />
+                </div>
+                <div tabIndex="-1" className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-30 p-2 shadow">
+                    <Link className='btn btn-ghost hover:btn-secondary' to={'/'}>Home</Link>
+                    <Link className='btn btn-ghost hover:btn-secondary' to={'/timeline'}>Timeline</Link>
+                    <Link className='btn btn-ghost hover:btn-secondary' to={'/stats'}>Stats</Link>
+                </div>
             </div>
         </div>
     );
