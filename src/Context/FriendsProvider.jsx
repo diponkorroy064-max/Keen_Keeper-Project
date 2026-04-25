@@ -3,7 +3,8 @@ import { FriendsContext } from './FriendsContext';
 
 const FriendsProvider = ({children}) => {
     const [timeline, setTimeline] = useState([]);
-    const [filter, setFilter] = useState([]);
+    const [filter, setFilter] = useState();
+    
 
     const data = {
         timeline,

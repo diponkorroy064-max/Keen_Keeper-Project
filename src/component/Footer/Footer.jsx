@@ -4,13 +4,14 @@ import { FaFacebookSquare } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { BsTwitterX } from "react-icons/bs";
 
+
 const Footer = () => {
     return (
         <div className='container mx-auto bg-green-900 text-[#FFFFFF] text-center px-10 pt-12 space-y-5'>
 
-            <h1 className='text-5xl font-extrabold'>KeenKeeper</h1>
+            <h1 className='text-2xl md:text-5xl font-extrabold'>KeenKeeper</h1>
 
-            <p className='text-gray-400'>Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.</p>
+            <p className='text-gray-100'>Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.</p>
 
             <div>
                 <h3 className='text-2xl font-bold mb-2.5'>Social Links</h3>
@@ -29,7 +30,8 @@ const Footer = () => {
 
                 <div className='flex gap-5 text-gray-400'>
                     <h3>Privacy Policy</h3>
-                    <h3>Terms of Service </h3>          <h3>Cookies</h3>
+                    <h3>Terms of Service </h3>
+                    <h3>Cookies</h3>
                 </div>
             </div>
 

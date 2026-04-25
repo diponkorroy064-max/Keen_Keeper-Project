@@ -6,11 +6,11 @@ const ErrorPage = () => {
     const error = useRouteError();
 
     return (
-        <div className="min-h-screen bg-gray-50 flex items-center justify-center px-4">
+        <div className="container mx-auto min-h-screen bg-[#F8FAFC] flex items-center justify-center px-4">
             <div className="max-w-md w-full text-center">
                 
                 <div className="mb-8">
-                    <div className="text-[120px] leading-none font-bold text-gray-200">404</div>
+                    <div className="text-[120px] leading-none font-bold text-gray-400">404</div>
                     <div className="text-6xl">😕</div>
                 </div>
 

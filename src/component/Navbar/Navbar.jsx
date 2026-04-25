@@ -7,17 +7,17 @@ import { BsGraphUp } from "react-icons/bs";
 
 const Navbar = () => {
     return (
-        <div className='container mx-auto flex justify-between items-center flex-wrap gap-2 px-10 py-3 bg-white shadow'>
+        <div className='container mx-auto flex justify-between items-center flex-wrap gap-2 px-5 md:px-10 py-3 bg-white shadow-2xs border-b border-gray-300'>
             <div>
                 <h2 className='text-2xl font-semibold text-green-800'><span className='font-extrabold text-black'>Keen</span>keeper</h2>
             </div>
 
             <div className='flex justify-center items-center flex-wrap gap-2'>
-                <NavLink to={'/'} className={({ isActive }) => `w-28 btn ${isActive ? "bg-green-900 text-white" : "shadow"}`}><FaHome /> Home</NavLink>
+                <NavLink to={'/'} className={({ isActive }) => `btn ${isActive ? "bg-green-900 text-white" : "shadow"}`}><FaHome /> Home</NavLink>
 
-                <NavLink to={'/timeline'} className={({ isActive }) => `w-28 btn ${isActive ? "bg-green-900 text-white" : "shadow"}`}> <IoTimeOutline /> Timeline</NavLink>
+                <NavLink to={'/timeline'} className={({ isActive }) => `btn ${isActive ? "bg-green-900 text-white" : "shadow"}`}> <IoTimeOutline /> Timeline</NavLink>
 
-                <NavLink to={'/ststs'} className={({ isActive }) => `w-28 btn ${isActive ? "bg-green-900 text-white" : "shadow"}`}><BsGraphUp /> Stats</NavLink>
+                <NavLink to={'/ststs'} className={({ isActive }) => `btn ${isActive ? "bg-green-900 text-white" : "shadow"}`}><BsGraphUp /> Stats</NavLink>
             </div>
         </div>
     );

@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { FriendsContext } from '../../Context/FriendsContext';
 import callImg from '../../assets/call.png'
 import textImg from '../../assets/text.png'
@@ -9,9 +9,7 @@ import { IoIosArrowDown } from "react-icons/io";
 const Timeline = () => {
 
     const { timeline, filter, setFilter } = useContext(FriendsContext);
-    // console.log(timeline);
-
-    // setFilter([...timeline]);
+    console.log(timeline);
 
     const clickHandler = (state) => {
         // console.log(state);
@@ -50,20 +48,20 @@ const Timeline = () => {
         }
     }
 
-
+    useEffect(() => { setFilter([...timeline]) }, []);
 
     return (
-        <div className='bg-[#F8FAFC] py-10 px-30 space-y-6'>
+        <div className='container mx-auto bg-[#F8FAFC] py-7 px-5 md:px-30'>
             <h2 className='text-3xl font-bold text-[#244d3f]'>Timeline</h2>
 
-            <div>
-                <div className="dropdown dropdown-center">
+            <div className='mt-5 mb-20'>
+                <div className="dropdown dropdown-right">
                     <div tabIndex={0} role="button" className="btn m-1">Filter Timeline <IoIosArrowDown /></div>
-                    <ul tabIndex="-1" className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
-                        <li onClick={()=>clickHandler('all')} className='btn'>All</li>
-                        <li onClick={()=>clickHandler('call')} className='btn'>Call</li>
-                        <li onClick={()=>clickHandler('text')} className='btn'>Text</li>
-                        <li onClick={()=>clickHandler('video')} className='btn'>Video</li>
+                    <ul tabIndex="-1" className="dropdown-content menu bg-base-100 rounded-box z-1 w-30 p-2 shadow-sm">
+                        <li onClick={()=>clickHandler('all')} className='btn hover:btn-secondary'>All</li>
+                        <li onClick={() => clickHandler('call')} className='btn hover:btn-secondary'>Call</li>
+                        <li onClick={() => clickHandler('text')} className='btn hover:btn-secondary'>Text</li>
+                        <li onClick={() => clickHandler('video')} className='btn hover:btn-secondary'>Video</li>
                     </ul>
                 </div>
             </div>
@@ -72,13 +70,13 @@ const Timeline = () => {
                 <div className='space-y-4'>
                     {
                         timeline.length == 0 ? <div className='bg-white text-center px-5 py-20 border border-gray-300 rounded-2xl m-auto'>
-                            <h4 className='text-2xl font-semibold'>No timeline events yet! Go to a friend's profile to log a check-in.</h4>
-                        </div> : filter.map((item, idx) => <div key={idx} className='bg-white py-2.5 px-6 border border-gray-300 rounded-md flex justify-start items-center gap-5'>
+                            <h4 className='text-2xl text-red-300 font-semibold'>No timeline events yet! Go to a friend's profile to log a check-in.</h4>
+                        </div> : filter?.map((item, idx) => <div key={idx} className='bg-white py-2.5 px-6 border border-gray-300 rounded-md flex justify-start items-center gap-5'>
                             <div><img className='w-6' src={item.type == 'Text' ? textImg : item.type == 'Call' ? callImg : videoImg} alt="" /></div>
 
                             <div>
                                 <h3><span className='font-semibold text-2xl'>{item.type}</span> with {item.name}</h3>
-                                <h3>{item.next_due_date}</h3>
+                                <h3>{item.date}</h3>
                             </div>
                         </div>
                         )

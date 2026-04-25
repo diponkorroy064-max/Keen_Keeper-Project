@@ -5,14 +5,14 @@ import { FriendsContext } from '../../Context/FriendsContext';
 
 const Stats = () => {
     const { timeline } = useContext(FriendsContext);
-    console.log(timeline);
+    // console.log(timeline);
 
     let call = 0;
     let text = 0;
     let video = 0;
-    
+
     for (const obj of timeline) {
-        if (obj.type=="Call") {
+        if (obj.type == "Call") {
             call++;
             // console.log(obj.type);
         }
@@ -35,7 +35,7 @@ const Stats = () => {
 
 
     return (
-        <div className='px-30 py-10'>
+        <div className='container mx-auto px-5 sm:px-30 py-10 bg-[#F8FAFC]'>
             <div>
                 <h1 className='text-3xl font-bold'>Friendship Analytics</h1>
             </div>
@@ -45,14 +45,14 @@ const Stats = () => {
                     <h3 className='text-[20px] text-green-900 p-5'>By Interaction Type</h3>
                 </div>
 
-                <div className='flex flex-col justify-center items-center'>
+                {timeline.length == 0 ? <div className='text-center text-red-300 px-8'>No interactions logged yet</div> : <div className='flex flex-col justify-center items-center'>
                     <PieChart style={{ width: '100%', maxWidth: '300px', maxHeight: '80vh', aspectRatio: 1 }} responsive>
                         <Pie
                             data={data}
                             innerRadius="80%"
                             outerRadius="100%"
                             // Corner radius is the rounded edge of each pie slice
-                            cornerRadius="50%"
+                            cornerRadius="6%"
                             fill="#8884d8"
                             // padding angle is the gap between each pie slice
                             paddingAngle={5}
@@ -62,7 +62,8 @@ const Stats = () => {
                         <Legend></Legend>
                         <Tooltip></Tooltip>
                     </PieChart>
-                </div>
+                </div>}
+
             </div>
 
         </div>

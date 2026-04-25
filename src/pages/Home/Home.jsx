@@ -7,7 +7,7 @@ import AllFriends from './AllFriends';
 
 const Home = () => {
     return (
-        <div className='container mx-auto'>
+        <div className='container mx-auto bg-[#F8FAFC]'>
             <Hero></Hero>
             <Tabs></Tabs>
             <AllFriends></AllFriends>

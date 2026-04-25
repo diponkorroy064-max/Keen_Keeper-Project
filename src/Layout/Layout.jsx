@@ -6,7 +6,7 @@ import { ToastContainer } from 'react-toastify';
 
 const Layout = () => {
     return (
-        <div className='bg-[#F8FAFC]'>
+        <div>
             <Navbar></Navbar>
             <Outlet></Outlet>
             <Footer></Footer>

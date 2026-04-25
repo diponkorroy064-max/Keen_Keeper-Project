@@ -13,7 +13,7 @@ const AllFriends = () => {
     }
 
     return (
-        <div className='px-10 my-10'>
+        <div className='px-10 py-10'>
             <div className='mb-4'>
                 <h1 className='text-2xl font-extrabold'>Your Friends</h1>
             </div>
