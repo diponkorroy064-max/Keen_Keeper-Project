@@ -21,14 +21,15 @@ const Navbar = () => {
                 <NavLink to={'/stats'} className={({ isActive }) => `btn ${isActive ? "bg-green-900 text-white" : "shadow"}`}><BsGraphUp /> Stats</NavLink>
             </div>
 
-            <div className="dropdown dropdown-left md:hidden">
+            <div className="dropdown dropdown-left md:hidden relative">
                 <div tabIndex={0} className=''>
-                    <GiHamburgerMenu />
+                    <GiHamburgerMenu className='btn bg-transparent border-0'/>
                 </div>
-                <div tabIndex="-1" className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-30 p-2 shadow">
-                    <Link className='btn btn-ghost hover:btn-secondary' to={'/'}>Home</Link>
-                    <Link className='btn btn-ghost hover:btn-secondary' to={'/timeline'}>Timeline</Link>
-                    <Link className='btn btn-ghost hover:btn-secondary' to={'/stats'}>Stats</Link>
+                <div tabIndex="-1" className="menu menu-sm dropdown-content bg-white rounded-box z-1 mt-3 w-35 p-2 shadow">
+
+                    <Link className='btn btn-soft border border-gray-300 hover:btn-secondary' to={'/'}><FaHome /> Home</Link>
+                    <Link className='btn btn-soft border border-gray-300 hover:btn-secondary' to={'/timeline'}><IoTimeOutline /> Timeline</Link>
+                    <Link className='btn btn-soft border border-gray-300 hover:btn-secondary' to={'/stats'}><BsGraphUp /> Stats</Link>
                 </div>
             </div>
         </div>
