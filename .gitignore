@@ -13,7 +13,6 @@ dist-ssr
 *.local
 
 # Editor directories and files
-.vscode/*
 !.vscode/extensions.json
 .idea
 .DS_Store
@@ -24,3 +23,12 @@ dist-ssr
 *.sw?
 
 .vercel
+
+# Environment variables & secrets (added by GitHub Guardian)
+*.env
+!.env.example
+!.env.sample
+.envrc
+.venv/
+venv/
+config.bat
